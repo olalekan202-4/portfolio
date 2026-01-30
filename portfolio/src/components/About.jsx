@@ -11,9 +11,9 @@ const About = () => {
   ];
 
   const experiences = [
-    { year: "2023-Present", role: "Freelance Frontend Developer", company: "Various Clients" },
-    { year: "2023", role: "Web3 Frontend Developer", company: "LilGarg NFTs" },
-    { year: "2022", role: "Frontend Intern", company: "E-commerce Projects" },
+    { year: "2024-Present", role: "Freelance Frontend Developer", company: "Various Clients" },
+    { year: "2024", role: "Web3 Frontend Developer", company: "LilGarg NFTs" },
+    { year: "2024", role: "Frontend Intern", company: "E-commerce Projects" },
   ];
 
   return (

@@ -3,7 +3,7 @@ import { useState } from "react";
 const projects = [
   { 
     name: "ShopMafs", 
-    description: "Full-featured e-commerce platform with seller authentication, cart, and payment integration.", 
+    description: "Full-featured e-commerce platform with seller authentication, cart.", 
     link: "https://shopmafs.com",
     category: "E-commerce",
     tech: ["React", "Tailwind", "Firebase"]

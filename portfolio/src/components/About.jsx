@@ -17,7 +17,7 @@ const About = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-28 md:py-36 fade-in-up">
+    <section className="max-w-6xl mx-auto px-6 py-10 fade-in-up">
       <div className="flex flex-col lg:flex-row gap-12">
         <div className="lg:w-2/3">
           <div className="flex items-center gap-3 mb-6">
@@ -53,18 +53,18 @@ const About = () => {
           </div>
 
           <p className="text-lg leading-relaxed text-gray-800 dark:text-gray-300 max-w-3xl">
-            Currently seeking an <span className="font-semibold">internship or junior frontend role</span> where I can contribute to meaningful products, 
+            Currently seeking an <span className="font-semibold">junior frontend role</span> where I can contribute to meaningful products, 
             learn from experienced teams, and grow as a professional developer.
           </p>
         </div>
 
         <div className="lg:w-1/3">
           <h4 className="text-xl font-semibold mb-6 text-gray-900 dark:text-gray-100 flex items-center gap-2">
-            <span>🛠️</span> Technical Skills
+            Technical Skills
           </h4>
           
           {/* Skill categories */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             {["Frontend", "Styling", "Languages", "Tools"].map((category) => (
               <div key={category}>
                 <h5 className="font-medium text-gray-700 dark:text-gray-300 mb-3">{category}</h5>
@@ -83,13 +83,6 @@ const About = () => {
               </div>
             ))}
           </div>
-
-          {/* Education */}
-          {/* <div className="mt-10 p-4 bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-900/50 dark:to-gray-800/50 rounded-xl">
-            <h5 className="font-semibold mb-2 text-gray-900 dark:text-gray-100">🎓 Education</h5>
-            <p className="text-gray-700 dark:text-gray-300">B.Sc. Computer Science</p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">University of [Your University]</p>
-          </div> */}
         </div>
       </div>
     </section>

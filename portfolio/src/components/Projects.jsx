@@ -41,14 +41,14 @@ const projects = [
     description: "Revenue and analytics dashboard with data visualization.", 
     link: "https://revenue.lilgarg.xyz",
     category: "Dashboard",
-    tech: ["React", "Charts", "API"]
+    tech: ["React", "Charts", "Web3"]
   },
   { 
     name: "GargPad", 
     description: "NFT launchpad and minting interface with multi-wallet support.", 
     link: "https://gargpad.lilgarg.xyz",
     category: "Web3",
-    tech: ["React", "Web3", "UI"]
+    tech: ["React", "Web3", "Supabase"]
   },
 ];
 
@@ -61,7 +61,7 @@ const Projects = () => {
     : projects.filter(project => project.category === filter);
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-6 py-32 md:py-40 fade-in-up">
+    <section id="projects" className="max-w-6xl mx-auto px-6 py-10 fade-in-up">
       <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
         Selected Projects
       </h3>
@@ -87,7 +87,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredProjects.map((project, index) => (
           <a
             key={index}

@@ -28,7 +28,7 @@ const Contact = () => {
     {
       name: "WhatsApp",
       url: "https://wa.me/2347017179260",
-      icon: "💬",
+      icon: "/whatsapp.png",
       username: "+234 701 717 9260",
       color: "text-green-600",
       bgColor: "bg-green-50 dark:bg-green-900/20",
@@ -36,7 +36,7 @@ const Contact = () => {
     {
       name: "GitHub",
       url: "https://github.com/olalekan202-4",
-      icon: "🐙",
+      icon: "/github.png",
       username: "@olalekan202-4",
       color: "text-gray-800 dark:text-gray-300",
       bgColor: "bg-gray-50 dark:bg-gray-900/20",
@@ -44,7 +44,7 @@ const Contact = () => {
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/olalekan-adejumo2",
-      icon: "💼",
+      icon: "/linkedin.png",
       username: "olalekan-adejumo2",
       color: "text-blue-600",
       bgColor: "bg-blue-50 dark:bg-blue-900/20",
@@ -52,7 +52,7 @@ const Contact = () => {
     {
       name: "Email",
       url: "mailto:adejumoolalekan16@yahoo.com",
-      icon: "✉️",
+      icon: "/gmail.png",
       username: "adejumoolalekan16@yahoo.com",
       color: "text-red-600",
       bgColor: "bg-red-50 dark:bg-red-900/20",
@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="max-w-6xl mx-auto px-6 py-32 md:py-40 fade-in-up"
+      className="max-w-6xl mx-auto px-6 py-10 fade-in-up"
     >
       <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
         Get in Touch
@@ -159,7 +159,8 @@ const Contact = () => {
                 className={`flex items-center gap-4 p-4 border border-gray-200 dark:border-gray-800 
                 rounded-xl hover:scale-[1.02] transition-all duration-300 group ${link.bgColor}`}
               >
-                <div className="text-2xl">{link.icon}</div>
+                <div className="w-6"><img src={link.icon} alt={link.name}/>
+</div>
                 <div className="flex-1">
                   <h5 className={`font-medium ${link.color}`}>
                     {link.name}
@@ -186,12 +187,7 @@ const Contact = () => {
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               <span className="font-medium">Response Time:</span> Typically respond within 24 hours
             </p>
-            
-            {/* <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-              <p className="text-sm text-gray-500 dark:text-gray-500">
-                <span className="font-medium">Preferred Contact:</span> WhatsApp for fastest response
-              </p>
-            </div> */}
+          
           </div>
         </div>
       </div>

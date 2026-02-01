@@ -1,6 +1,6 @@
 const TechStack = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-32 md:py-40">
+    <section className="max-w-6xl mx-auto px-6 py-10">
       <h3 className="text-3xl md:text-4xl font-semibold tracking-tight mb-6">
         Tech Stack
       </h3>

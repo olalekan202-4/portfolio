@@ -48,7 +48,7 @@ function App() {
         {/* Enhanced Footer */}
         <footer className="border-t border-gray-200 dark:border-gray-800 py-8">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row justify-between">
               <div className="mb-4 md:mb-0">
                 <p className="text-gray-700 dark:text-gray-300 font-medium mb-2">Olalekan Adejumo</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -65,7 +65,7 @@ function App() {
                     className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2"
                     aria-label="GitHub profile"
                   >
-                    <span className="text-lg">🐙</span>
+                    <span className="w-6"><img src="/github.png" alt="github" /></span>
                     <span className="hidden sm:inline">GitHub</span>
                   </a>
                   <a 
@@ -75,7 +75,7 @@ function App() {
                     className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2"
                     aria-label="LinkedIn profile"
                   >
-                    <span className="text-lg">💼</span>
+                   <span className="w-6"><img src="/linkedin.png" alt="linkedin" /></span>
                     <span className="hidden sm:inline">LinkedIn</span>
                   </a>
                   <a 
@@ -83,7 +83,7 @@ function App() {
                     className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2"
                     aria-label="Send email"
                   >
-                    <span className="text-lg">✉️</span>
+                    <span className="w-6"><img src="/gmail.png" alt="gmail" /></span>
                     <span className="hidden sm:inline">Email</span>
                   </a>
                 </div>

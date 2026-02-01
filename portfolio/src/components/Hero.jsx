@@ -29,7 +29,7 @@ const Hero = () => {
   }, [charIndex, isDeleting, roleIndex, roles]);
 
   return (
-    <section id="hero" className="max-w-6xl mx-auto px-6 py-32 md:py-40 fade-in-up">
+    <section id="hero" className="max-w-6xl mx-auto px-6 py-10 fade-in-up">
       {/* Location badge */}
       <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full mb-8">
         <span className="text-sm font-medium text-gray-700 dark:text-gray-300">📍</span>
@@ -68,30 +68,21 @@ const Hero = () => {
           <span>Get in Touch</span>
           <span>📱</span>
         </a>
-        {/* <a
-          href="https://drive.google.com/file/d/your-resume-id/view"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg font-medium hover:scale-105 transition-all duration-300 border border-blue-200 dark:border-blue-800 flex items-center gap-2"
-        >
-          <span>Download Resume</span>
-          <span>📄</span>
-        </a> */}
       </div>
 
       {/* Stats */}
-      <div className="flex flex-wrap gap-8 mt-16 pt-8 border-t border-gray-200 dark:border-gray-800">
+      <div className="flex flex-wrap gap-7 mt-16 pt-4 border-t border-gray-200 dark:border-gray-800">
         <div className="text-center">
           <div className="text-3xl font-bold text-gray-900 dark:text-white">2+</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Years Experience</div>
         </div>
         <div className="text-center">
           <div className="text-3xl font-bold text-gray-900 dark:text-white">8+</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Projects Completed</div>
         </div>
         <div className="text-center">
           <div className="text-3xl font-bold text-gray-900 dark:text-white">100%</div>
-          <div className="text-sm text-gray-600 dark:text-gray-400">Client Satisfaction</div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">Client Satisfaction</div>
         </div>
       </div>
     </section>

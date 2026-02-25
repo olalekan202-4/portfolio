@@ -22,13 +22,13 @@ const projects = [
     category: "Social",
     tech: ["React", "Firebase", "Tailwind"]
   },
-  { 
-    name: "RustyRigs", 
-    description: "Web3 NFT mining and claiming platform with wallet integration.", 
-    link: "https://rustyrigs.club",
-    category: "Web3",
-    tech: ["React", "Web3", "Tailwind"]
-  },
+  // { 
+  //   name: "RustyRigs", 
+  //   description: "Web3 NFT mining and claiming platform with wallet integration.", 
+  //   link: "https://rustyrigs.club",
+  //   category: "Web3",
+  //   tech: ["React", "Web3", "Tailwind"]
+  // },
   { 
     name: "LilGarg", 
     description: "Web3 NFT minting platform with gallery and collection features.", 

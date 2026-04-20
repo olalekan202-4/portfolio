@@ -13,7 +13,7 @@ const projects = [
     description: "Full-featured e-commerce platform with seller authentication, cart and stripe card payment", 
     link: "https://www.wallyvariety.uk/",
     category: "E-commerce",
-    tech: ["React", "Tailwind", "Firebase", "Stripe"]
+    tech: ["React", "Tailwind", "Supabase", "Stripe"]
   },
   { 
     name: "Nile", 
@@ -34,7 +34,7 @@ const projects = [
     description: "Web3 NFT minting platform with gallery and collection features.", 
     link: "https://lilgarg.xyz",
     category: "Web3",
-    tech: ["React", "Web3", "API"]
+    tech: ["React", "Web3", "Firebase", "API"]
   },
   { 
     name: "LilGarg Revenue", 

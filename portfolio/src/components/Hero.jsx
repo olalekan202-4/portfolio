@@ -35,9 +35,6 @@ const Hero = () => {
     <section id="hero" className="max-w-6xl mx-auto px-6 py-10 fade-in-up">
       {/* Location badge */}
       <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full mb-8">
-        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-          📍
-        </span>
         <span className="text-sm text-gray-600 dark:text-gray-400">
           Available for remote opportunities
         </span>
@@ -79,7 +76,6 @@ const Hero = () => {
           className="px-6 py-3 border-2 border-gray-700 dark:border-gray-400 rounded-lg font-medium hover:scale-105 transition-all duration-300 hover:border-blue-500 dark:hover:border-blue-400 text-gray-900 dark:text-gray-100 flex items-center gap-2"
         >
           <span>Get in Touch</span>
-          <span>📱</span>
         </a>
       </div>
 

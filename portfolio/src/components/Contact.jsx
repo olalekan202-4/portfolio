@@ -133,7 +133,6 @@ const Contact = () => {
               hover:bg-green-700 transition-all duration-300 hover:scale-[1.02] 
               flex items-center justify-center gap-2"
             >
-              <span>📱</span>
               Open WhatsApp & Send
             </button>
             

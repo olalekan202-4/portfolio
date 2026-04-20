@@ -9,21 +9,24 @@ const Hero = () => {
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
-    
-    const timeout = setTimeout(() => {
-      if (!isDeleting && charIndex < currentRole.length) {
-        setTypedText(currentRole.substring(0, charIndex + 1));
-        setCharIndex(charIndex + 1);
-      } else if (isDeleting && charIndex > 0) {
-        setTypedText(currentRole.substring(0, charIndex - 1));
-        setCharIndex(charIndex - 1);
-      } else if (!isDeleting && charIndex === currentRole.length) {
-        setTimeout(() => setIsDeleting(true), 1500);
-      } else if (isDeleting && charIndex === 0) {
-        setIsDeleting(false);
-        setRoleIndex((roleIndex + 1) % roles.length);
-      }
-    }, isDeleting ? 50 : 100);
+
+    const timeout = setTimeout(
+      () => {
+        if (!isDeleting && charIndex < currentRole.length) {
+          setTypedText(currentRole.substring(0, charIndex + 1));
+          setCharIndex(charIndex + 1);
+        } else if (isDeleting && charIndex > 0) {
+          setTypedText(currentRole.substring(0, charIndex - 1));
+          setCharIndex(charIndex - 1);
+        } else if (!isDeleting && charIndex === currentRole.length) {
+          setTimeout(() => setIsDeleting(true), 1500);
+        } else if (isDeleting && charIndex === 0) {
+          setIsDeleting(false);
+          setRoleIndex((roleIndex + 1) % roles.length);
+        }
+      },
+      isDeleting ? 50 : 100,
+    );
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, roleIndex, roles]);
@@ -32,8 +35,12 @@ const Hero = () => {
     <section id="hero" className="max-w-6xl mx-auto px-6 py-10 fade-in-up">
       {/* Location badge */}
       <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 rounded-full mb-8">
-        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">📍</span>
-        <span className="text-sm text-gray-600 dark:text-gray-400">Available for remote opportunities</span>
+        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+          📍
+        </span>
+        <span className="text-sm text-gray-600 dark:text-gray-400">
+          Available for remote opportunities
+        </span>
       </div>
 
       {/* Animated accent line */}
@@ -49,8 +56,12 @@ const Hero = () => {
       </h1>
 
       <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mb-8">
-        Crafting exceptional digital experiences with clean code, modern design, and user-focused interfaces.
-        Currently seeking <span className="font-semibold text-blue-600 dark:text-blue-400">frontend internships & junior roles</span>.
+        Building the modern web with <strong>clean architecture</strong> and a
+        focus on intuitive user experiences. Currently seeking{" "}
+        <span className="font-semibold text-blue-600 dark:text-blue-400">
+          Frontend Roles
+        </span>
+        .
       </p>
 
       <div className="flex flex-wrap gap-4 mt-10">
@@ -59,7 +70,9 @@ const Hero = () => {
           className="px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg font-medium hover:scale-105 transition-all duration-300 hover:shadow-xl flex items-center gap-2 group"
         >
           <span>View Projects</span>
-          <span className="group-hover:translate-x-1 transition-transform">→</span>
+          <span className="group-hover:translate-x-1 transition-transform">
+            →
+          </span>
         </a>
         <a
           href="#contact"
@@ -73,16 +86,28 @@ const Hero = () => {
       {/* Stats */}
       <div className="flex flex-wrap gap-7 mt-16 pt-4 border-t border-gray-200 dark:border-gray-800">
         <div className="text-center">
-          <div className="text-3xl font-bold text-gray-900 dark:text-white">2+</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Years Experience</div>
+          <div className="text-3xl font-bold text-gray-900 dark:text-white">
+            2+
+          </div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">
+            Years Experience
+          </div>
         </div>
         <div className="text-center">
-          <div className="text-3xl font-bold text-gray-900 dark:text-white">8+</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Projects Completed</div>
+          <div className="text-3xl font-bold text-gray-900 dark:text-white">
+            8+
+          </div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">
+            Projects Completed
+          </div>
         </div>
         <div className="text-center">
-          <div className="text-3xl font-bold text-gray-900 dark:text-white">100%</div>
-          <div className="text-xs text-gray-600 dark:text-gray-400">Client Satisfaction</div>
+          <div className="text-3xl font-bold text-gray-900 dark:text-white">
+            100%
+          </div>
+          <div className="text-xs text-gray-600 dark:text-gray-400">
+            Client Satisfaction
+          </div>
         </div>
       </div>
     </section>

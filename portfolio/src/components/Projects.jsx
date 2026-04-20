@@ -8,6 +8,13 @@ const projects = [
     category: "E-commerce",
     tech: ["React", "Tailwind", "Firebase"]
   },
+   { 
+    name: "Wally Variety", 
+    description: "Full-featured e-commerce platform with seller authentication, cart and stripe card payment", 
+    link: "https://www.wallyvariety.uk/",
+    category: "E-commerce",
+    tech: ["React", "Tailwind", "Firebase", "Stripe"]
+  },
   { 
     name: "Nile", 
     description: "Business website and digital platform with CMS integration and responsive design.", 
@@ -16,19 +23,12 @@ const projects = [
     tech: ["React", "Tailwind", "API"]
   },
   { 
-    name: "SurplusShare", 
+    name: "SurpluShare", 
     description: "Platform for sharing surplus food and goods with real-time notifications.", 
     link: "https://surplushare.com",
     category: "Social",
     tech: ["React", "Firebase", "Tailwind"]
   },
-  // { 
-  //   name: "RustyRigs", 
-  //   description: "Web3 NFT mining and claiming platform with wallet integration.", 
-  //   link: "https://rustyrigs.club",
-  //   category: "Web3",
-  //   tech: ["React", "Web3", "Tailwind"]
-  // },
   { 
     name: "LilGarg", 
     description: "Web3 NFT minting platform with gallery and collection features.", 

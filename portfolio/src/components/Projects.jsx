@@ -36,6 +36,20 @@ const projects = [
     category: "Web3",
     tech: ["React", "Web3", "Firebase", "API"]
   },
+  {
+  name: "Pixel Pivot",
+  description: "Decentralized Web3 platform built with wallet integration, blockchain interactions, and a modern responsive interface.",
+  link: "http://pixelpivots.xyz/",
+  category: "Web3",
+  tech: ["React", "Web3", "Solidity", "Tailwind"]
+},
+{
+  name: "Prediction Market Prototype",
+  description: "Prototype of a decentralized prediction market where users can participate in event-based forecasting using Web3 technologies.",
+  link: "https://prediction-three-dun.vercel.app/",
+  category: "Web3",
+  tech: ["React", "Web3", "Tailwind", "Smart Contracts"]
+},
   { 
     name: "LilGarg Revenue", 
     description: "Revenue and analytics dashboard with data visualization.", 

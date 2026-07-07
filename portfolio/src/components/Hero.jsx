@@ -83,7 +83,7 @@ const Hero = () => {
       <div className="flex flex-wrap gap-7 mt-16 pt-4 border-t border-gray-200 dark:border-gray-800">
         <div className="text-center">
           <div className="text-3xl font-bold text-gray-900 dark:text-white">
-            2+
+            7+
           </div>
           <div className="text-xs text-gray-600 dark:text-gray-400">
             Years Experience

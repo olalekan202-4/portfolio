@@ -35,7 +35,7 @@ const About = () => {
             <span className="font-semibold text-blue-600 dark:text-blue-400">
               Frontend Developer
             </span>{" "}
-            with 7+ years of experience building modern web applications. I
+            with 2+ years of experience building modern web applications. I
             specialize in creating responsive, accessible, and performant user
             interfaces using React and modern web technologies.
           </p>
